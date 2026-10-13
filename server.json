@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/bts-ontime",
+  "title": "Bts Ontime",
+  "description": "bts-ontime -- US airline on-time performance and delay causes (fleet #2953).",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/bts-ontime",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-bts-ontime",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/bts-ontime/mcp"
+    }
+  ]
+}
