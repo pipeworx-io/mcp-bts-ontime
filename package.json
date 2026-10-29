@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-bts-ontime",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "bts-ontime -- US airline on-time performance and delay causes (fleet #2953).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-bts-ontime": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "bts-ontime"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-bts-ontime.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/bts-ontime",
   "pipeworx": {
-    "sourceHash": "v1-4ccab4bb85e41d533d5ea978010ca37919c66c7500930b64b48559de10ab041c",
-    "sourceCommit": "c1590c25b5e94f477a53686cb61bd09cc196c1ee"
+    "mode": "gateway",
+    "slug": "bts-ontime",
+    "gatewaySlug": "bts-ontime",
+    "sourceHash": "v1-fd4a19e805e686a943ca36cc516dfb47db8ff6c651537f3cee5c269c763b6ca2",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
