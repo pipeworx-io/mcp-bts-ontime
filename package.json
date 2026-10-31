@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-bts-ontime",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "bts-ontime -- US airline on-time performance and delay causes (fleet #2953).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "bts-ontime",
     "gatewaySlug": "bts-ontime",
-    "sourceHash": "v1-fd4a19e805e686a943ca36cc516dfb47db8ff6c651537f3cee5c269c763b6ca2",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-d26478474bf57d0f236015090a85f02be6d1dbc7322d2ec25a99a2d639651679",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
